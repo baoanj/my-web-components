@@ -1,0 +1,12 @@
+{
+  "name": "my-web-components",
+  "version": "1.0.0",
+  "description": "web components practice for static page",
+  "main": "server.js",
+  "scripts": {
+    "serve": "node server.js",
+    "build": "node build.js"
+  },
+  "author": "baoanj",
+  "license": "ISC"
+}

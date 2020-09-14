@@ -1,0 +1,49 @@
+<button id="open">打开对话框</button>
+<div id="dialog">
+  <div id="wrapper">
+    <div id="header">
+      <span id="title"></span><span id="close">×</span>
+    </div>
+    <div id="content"><slot></slot></div>
+  </div>
+</div>
+
+<script>
+  shadow.querySelector('#open').onclick = () => {
+    shadow.querySelector('#dialog').style.display = 'block'
+  }
+  shadow.querySelector('#close').onclick = () => {
+    shadow.querySelector('#dialog').style.display = 'none'
+  }
+  shadow.querySelector('#title').textContent = this.getAttribute('titl')
+</script>
+
+<style>
+  #dialog {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  #wrapper {
+    width: 60%;
+    margin: 100px auto;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  #header {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    font-weight: bold;
+  }
+  #close {
+    float: right;
+    cursor: pointer;
+  }
+  #content {
+    padding: 20px;
+  }
+</style>

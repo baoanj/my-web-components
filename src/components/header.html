@@ -1,0 +1,31 @@
+<div class="header">
+  <span class="logo">LOGO</span>
+  <span class="menu">
+    <a href="/index.html">首页</a> |
+    <a href="/about.html">关于</a> |
+    <a href="/more.html">更多</a>
+  </span>
+</div>
+
+<script>
+  shadow.querySelector('.logo').addEventListener('click', () => {
+    alert('LOGO')
+  })
+</script>
+
+<style>
+  .header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .menu {
+    margin-left: 20vw;
+  }
+</style>

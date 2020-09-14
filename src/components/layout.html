@@ -1,0 +1,27 @@
+<div class="page">
+  <div class="header">
+    <page-header></page-header>
+  </div>
+  <div class="main"><slot></slot></div>
+  <div class="footer">
+    <page-footer></page-footer>
+  </div>
+</div>
+
+<style>
+  .page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    flex-shrink: 0;
+  }
+  .main {
+    flex: 1;
+    overflow: auto;
+  }
+  .footer {
+    flex-shrink: 0;
+  }
+</style>

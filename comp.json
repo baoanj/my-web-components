@@ -1,0 +1,18 @@
+[
+  {
+    "file": "./src/components/layout.html",
+    "name": "page-layout"
+  },
+  {
+    "file": "./src/components/header.html",
+    "name": "page-header"
+  },
+  {
+    "file": "./src/components/footer.html",
+    "name": "page-footer"
+  },
+  {
+    "file": "./src/components/dialog.html",
+    "name": "page-dialog"
+  }
+]

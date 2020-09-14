@@ -1,0 +1,7 @@
+{
+  "/": "./src/views/index.html",
+  "/index.html": "./src/views/index.html",
+  "/about.html": "./src/views/about.html",
+  "/more.html": "./src/views/more.html",
+  "/404.html": "./src/views/404.html"
+}
